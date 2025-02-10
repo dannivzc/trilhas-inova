@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resolução dos Desafios - Trilhas Inova Maranhão 2B</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+
+        h1 {
+            text-align: center;
+            color: #7142a7;
+        }
+
+        pre {
+            background-color: #f8f8f8;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 1.1em;
+        }
+
+        section {
+            margin-bottom: 30px;
+        }
+
+        code {
+            color: #7142a7;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Resolução dos Desafios do Programa: Trilhas Inova Maranhão 2B</h1>
+    <h2>Desafio 1 resolvido</h2>
+
+    <section>
+        <h2>1. Crie uma variável chamada nome e atribua seu nome a ela. Em seguida, exiba o valor dessa variável.</h2>
+        <pre><code>let nome = "Danniella";
+console.log(nome);</code></pre>
+    </section>
+
+    <section>
+        <h2>2. Crie duas variáveis: uma chamada idade e outra chamada altura. Atribua a idade o valor 25 e a altura o valor 1.75. Exiba ambos os valores.</h2>
+        <pre><code>let idade = 25;
+let altura = 1.75;
+console.log(idade, altura);</code></pre>
+    </section>
+
+    <section>
+        <h2>3. Crie uma variável chamada preco com o valor 50 e uma variável desconto com o valor 0.2 (20%). Calcule o preço com desconto e exiba o valor final.</h2>
+        <pre><code>let preco = 50;
+let desconto = 0.2;
+let precoComDesconto = preco - (preco*desconto); 
+console.log(precoComDesconto);</code></pre>
+    </section>
+
+    <section>
+        <h2>4. Crie uma variável chamada temperatura e atribua o valor 30. Se a temperatura for maior que 25, exiba a mensagem "Está calor!". Caso contrário, exiba "Está fresco!".</h2>
+        <pre><code>let temperatura = 30;
+if (temperatura > 25) {
+    console.log('Está calor!');
+} else {
+    console.log('Está fresco!');
+}</code></pre>
+    </section>
+
+    <section>
+        <h2>5. Crie uma variável idade e atribua um valor. Se a pessoa for maior de idade (18 ou mais), exiba "Você é maior de idade". Caso contrário, exiba "Você é menor de idade".</h2>
+        <pre><code>let idade = 19;
+if (idade >= 18) {
+    console.log('Você é maior de idade');
+} else {
+    console.log('Você é menor de idade');
+}</code></pre>
+    </section>
+
+    <section>
+        <h2>6. Crie uma variável chamada nota e atribua um valor entre 0 e 10. Se a nota for maior ou igual a 7, exiba "Aprovado". Se for entre 5 e 6, exiba "Recuperação". Caso contrário, exiba "Reprovado".</h2>
+        <pre><code>let nota = 8;
+if (nota >= 7) {
+    console.log("Aprovado");
+} else if (nota >= 5) {
+    console.log("Recuperação");
+} else {
+    console.log("Reprovado");
+}</code></pre>
+    </section>
+
+    <section>
+        <h2>7. Crie duas variáveis, numero1 e numero2, e atribua valores a elas. Verifique se os dois números são iguais e, caso sejam, exiba "Os números são iguais". Caso contrário, exiba "Os números são diferentes".</h2>
+        <pre><code>let numero1 = 5;
+let numero2 = 10;
+if (numero1 == numero2) {
+    console.log("Os números são iguais");
+} else {
+    console.log("Os números são diferentes");
+}</code></pre>
+    </section>
+
+    <section>
+        <h2>8. Crie uma variável chamada nome e uma variável chamada idade. Exiba a mensagem "Olá, meu nome é [nome] e eu tenho [idade] anos", utilizando concatenação.</h2>
+        <pre><code>let nome = "Danniella";
+let idade = 19;
+console.log("Olá, meu nome é " + nome + " e eu tenho " + idade + " anos");</code></pre>
+    </section>
+
+    <section>
+        <h2>9. Crie um loop que imprima os números de 1 a 10 na tela.</h2>
+        <pre><code>let contador = 1;
+while(contador <= 10) {
+    console.log(contador);
+    contador++;
+}</code></pre>
+    </section>
+
+    <section>
+        <h2>10. Crie um loop que peça ao usuário para digitar um número até que ele digite o número 5.</h2>
+        <pre><code>let numero;
+while(numero != 5)  {
+    numero = parseInt(prompt('Digite um número:'));
+    console.log('Você digitou o número 5. Programa encerrado!');
+}</code></pre>
+    </section>
+
+    <section>
+        <h2>11. Crie um loop que imprima a tabuada do número 7, de 1 a 10.</h2>
+        <pre><code>let multi = 1;
+let numero = 7;
+
+while(multi <= 10) {
+    let resultado = numero * multi;
+    console.log(`${numero} x ${multi} = ${resultado}`);
+    multi++;
+}</code></pre>
+    </section>
+
+    <section>
+        <h2>12. Crie um loop que exiba todos os números pares de 0 a 20.</h2>
+        <pre><code>let numerosPares = 0
+while(numerosPares <= 20) {
+    console.log(numerosPares);
+    numerosPares += 2;
+}</code></pre>
+    </section>
+
+    <section>
+        <h2>13. Escreva um código que calcule a área de um círculo. Utilize uma função para realizar o cálculo. A função deve receber o raio como parâmetro e retornar a área.</h2>
+        <pre><code>function calcularAreaCirculo(raio) {
+    let area = Math.PI * raio * raio; 
+    return area;
+}
+console.log(calcularAreaCirculo(6));</code></pre>
+    </section>
+
+    <section>
+        <h2>14. Comente seu código explicando o que cada parte faz. Crie um programa simples que calcule a soma de dois números e imprima o resultado.</h2>
+        <pre><code>// Função para realizar a soma dos dois números 
+function somar (a, b) {
+    let soma = a + b; 
+    return soma; 
+}
+let resultado = somar(10, 30); 
+console.log(resultado);</code></pre>
+    </section>
+
+    <section>
+        <h2>15. Refatore o código abaixo para que seja mais legível, usando boas práticas de nomenclatura e separando o código em funções:</h2>
+        <pre><code>function somarNumeros(x, y) {
+    return x + y;
+}
+let x = 10;
+let y = 20;
+let z = somarNumeros(x, y);
+console.log(z);</code></pre>
+    </section>
+
+    <script>
+        // Aqui você pode adicionar os scripts de JavaScript, mas por enquanto o código já está apresentado em cada seção.
+    </script>
+
+</body>
+</html>
